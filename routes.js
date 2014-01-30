@@ -13,14 +13,9 @@ Router.map(function () {
     template: 'home'
   });
 
-  this.route('nothome', {
-    path: '/nothome',
-    template: 'post'
-  });
-
-    this.route('paper-ethical-marketing', {
+  this.route('paper-ethical-marketing', {
     path: '/paper-ethical-marketing',
   });
 
-  console.log("route started!!")
+  console.log("Router started!!")
 });

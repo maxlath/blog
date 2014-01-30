@@ -1,7 +1,23 @@
 body{
-    font-family:"Open Sans",sans-serif;
+    font-family:"Open Sans", sans-serif;
     font-weight:300;
     font-size:1em;
+}
+
+$verticalleftbarwidth: 260px;
+$horizontaltopbarheight: 100px;
+
+.leftbar{
+  position: fixed;
+  background-color: #171717;
+  color: #fff;
+  width: $verticalleftbarwidth;
+  height: 100vh;
+  padding: 20px;
+}
+
+.layout {
+  margin-left: $verticalleftbarwidth
 }
 
 h1{
@@ -22,8 +38,9 @@ section#shine {
 }
 
 @media screen and (max-width: 600px) {
-  section#shine {
-    background-image: url("../images/chess-700.jpg");
+  .leftbar {
+    height: $horizontaltopbarheight;
+    width: 100vw;
   }
   h1 {
     font-size: 15vw;
@@ -31,7 +48,6 @@ section#shine {
 }
 
 @media screen and (min-width: 1900px) {
-  section#shine {
-    background-image: url("../images/chess-2560.jpg");
+  .leftbar {
   }
 }
