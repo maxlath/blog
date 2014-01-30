@@ -1,0 +1,37 @@
+body{
+    font-family:"Open Sans",sans-serif;
+    font-weight:300;
+    font-size:1em;
+}
+
+h1{
+    font-family:"Open Sans",sans-serif;
+    font-weight:300;
+    font-size:3em;
+    color: #fff;
+    background-color: rgba(20,20,20,0.4);
+    padding: 20px;
+    margin-top: 10vh;
+}
+
+section#shine {
+    background-image: url("../images/chess-1800.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 50vh;
+}
+
+@media screen and (max-width: 600px) {
+  section#shine {
+    background-image: url("../images/chess-700.jpg");
+  }
+  h1 {
+    font-size: 15vw;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  section#shine {
+    background-image: url("../images/chess-2560.jpg");
+  }
+}

@@ -1,10 +1,10 @@
 if (Meteor.isClient) {
-  Template.hello.greeting = function () {
-    return "Welcome to maxlatheu.";
-  };
+  // Template.hello.greeting = function () {
+  //   return "Welcome to maxlatheu.";
+  // };
 
-  Template.hello.events({
-    'click input' : function () {
+  Template.nothome.events({
+    'click h1' : function () {
       // template data, if any, is available in 'this'
       if (typeof console !== 'undefined')
         console.log("You pressed the button");
@@ -17,3 +17,4 @@ if (Meteor.isServer) {
     // code to run on server at startup
   });
 }
+

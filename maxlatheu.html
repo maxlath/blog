@@ -1,17 +1,45 @@
 <head>
-  <title>maxlatheu</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="icon" sizes="16x16 32x32" href="/favicon.ico">
+	<title>maxlatheu</title>
 </head>
 
 <body>
-  {{> home}}
+  {{> layout}}
 </body>
 
+
+<template name="layout">
+  {{yield}}
+</template>
+
+<template name="posts">
+  Posts
+</template>
+
+<template name="nothome">
+  <h1>Nothome \o/</h1>
+</template>
+
 <template name="home">
+
 	<section id="shine">
 	    <div class="row">
-	        <div id="banner-box" class="panel text-center small-centered large-centered">
+	    	<div class="small-12 large-6 large-offset-3 text-center small-centered large-centered">
 	          <h1>Maxime Lathuilière</h1>
 	        </div>
 	    </div>
+
 	</section>
-</template>
+Home represent
+<!-- 	<section id="shine">
+	    <div class="row">
+	    	<div class="small-12 large-6 large-offset-3 text-center small-centered large-centered">
+	          <h1>Maxime Lathuilière</h1>
+	        </div>
+	    </div>
+	</section> -->
+
+</template>	

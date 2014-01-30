@@ -1,5 +1,7 @@
 {
   "packages": {
-    "foundation": {}
+    "foundation": {},
+    "scss": {},
+    "iron-router": {}
   }
 }

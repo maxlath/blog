@@ -8,3 +8,6 @@ autopublish
 insecure
 preserve-inputs
 foundation
+scss
+showdown
+iron-router
