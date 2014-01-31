@@ -12,6 +12,9 @@ body{
     a:hover{
       color: lighten($linkcolor, 15%);
     }
+/*    a:active, a:visited{
+      color: darken($linkcolor, 15%);
+    }*/
 }
 
 h1{
@@ -84,6 +87,7 @@ $layoutsidemargin: 50px;
   .layout {
     margin-right:$layoutsidemargin;
     margin-left: $verticalmenuwidth + $layoutsidemargin;
+    margin-top: 20px;
   }
   .widthcontainer{
     max-width: 600px;
