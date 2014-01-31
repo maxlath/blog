@@ -1,3 +1,5 @@
+$linkcolor: #D21919;
+
 body{
     /*position: fixed;*/
     /*top: 0;*/
@@ -5,7 +7,10 @@ body{
     font-weight:300;
     font-size:1em;
     a{
-      color: #D21919;
+      color: $linkcolor;
+    }
+    a:hover{
+      color: lighten($linkcolor, 15%);
     }
 }
 
@@ -85,7 +90,14 @@ $layoutsidemargin: 50px;
     margin-left: 5vw;
     margin-right: 5vw;
   }
+  .socialnetworks{
+    position: fixed;
+    bottom: 5px;
+  }
 }
 
-
-.socialnetworks{}
+.socialnetworks{
+  a{
+    font-size: 1em;
+  }
+}
