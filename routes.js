@@ -11,6 +11,9 @@ Router.map(function () {
    */
   this.route('home', {
     path: '/',
+    action: function() {
+      this.redirect('/p2p-rm')
+    }
   });
 
   this.route('about', {
@@ -27,9 +30,6 @@ Router.map(function () {
 
   this.route('tumblrposts', {
     path: '/post/*',
-    action: function() {
-      this.redirect('')
-    }
   })
 
   console.log("Router started!!")
