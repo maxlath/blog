@@ -19,7 +19,8 @@ h1{
 
 $verticalmenuwidth: 270px;
 $horizontalmenuheight: 354px;
-$layoutsidemargin: 20px;
+$layoutsidemargin: 50px;
+
 
 .menu{
   top: 0;
@@ -29,7 +30,6 @@ $layoutsidemargin: 20px;
 
 .layout {
   position: relative;
-  margin-right:$layoutsidemargin;
 }
 
 @media screen and (max-width: 600px) {
@@ -42,6 +42,7 @@ $layoutsidemargin: 20px;
     font-size:8vw;
   }
   .layout {
+    margin-right:$layoutsidemargin;
     margin-left: $layoutsidemargin;
     margin-top: $horizontalmenuheight + $layoutsidemargin;
   }
@@ -76,6 +77,15 @@ $layoutsidemargin: 20px;
     }
   }
   .layout {
-  margin-left: $verticalmenuwidth + $layoutsidemargin;
+    margin-right:$layoutsidemargin;
+    margin-left: $verticalmenuwidth + $layoutsidemargin;
+  }
+  .widthcontainer{
+    max-width: 600px;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
 }
+
+
+.socialnetworks{}
