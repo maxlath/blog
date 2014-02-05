@@ -1,10 +1,19 @@
-$linkcolor: #333FB0;
-$menubg: #222;
+$linkcolor: #ED6913;
+$menulinkcolor: #369100;
+$menubg: #D0D0D0;
+$datecolor: darken($linkcolor, 15%);
+
+$smallwidth:700px;
+$smallheight: 580px;
+$xlargewidth: 1400px;
+
+$verticalmenuwidth: 270px;
+$horizontalmenuheight: 354px;
+$layoutsidemarginlarge: 50px;
+$layoutsidemarginsmall: 15px;
 
 body{
-    /*position: fixed;*/
-    /*top: 0;*/
-    font-family: "Open Sans", "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-family:"Open Sans",sans-serif;
     font-weight:300;
     font-size:1em;
     a{
@@ -13,14 +22,10 @@ body{
     a:hover{
       color: lighten($linkcolor, 15%);
     }
-/*    a:active, a:visited{
-      color: darken($linkcolor, 15%);
-    }*/
     img{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        padding: 10px;
     }
 }
 
@@ -32,22 +37,28 @@ h1{
     background-color: rgba(20,20,20,0.4);
 }
 
-$verticalmenuwidth: 270px;
-$horizontalmenuheight: 354px;
-$layoutsidemargin: 50px;
+.date{
+  color: $datecolor;
+  text-align: center;
+}
 
 
 .menu{
   top: 0;
   background-color: $menubg;
   color: #fff;
+  a{
+    color: $menulinkcolor;
+    font-weight:300;
+  }
 }
 
 .layout {
   position: relative;
 }
 
-@media screen and (max-width: 600px) {
+/*Small Widht*/
+@media screen and (max-width: $smallwidth) {
   .menu {
     height: auto;
     width: 100vw;
@@ -57,8 +68,8 @@ $layoutsidemargin: 50px;
     font-size:8vw;
   }
   .layout {
-    margin-right:$layoutsidemargin;
-    margin-left: $layoutsidemargin;
+    margin-right:$layoutsidemarginsmall;
+    margin-left: $layoutsidemarginsmall;
     margin-top: 10px;
   }
   h1 {
@@ -70,7 +81,15 @@ $layoutsidemargin: 50px;
   }
 }
 
-@media screen and (min-width: 600px) {
+
+/*Large Widht*/
+@media screen and (min-width: $smallwidth) and (min-height: $smallheight) {
+  body{
+    img{
+        padding: 10px;
+
+    }
+  }
   .menu {
     position: fixed;
     width: auto;
@@ -84,7 +103,6 @@ $layoutsidemargin: 50px;
     a{
       font-size: 1.3em;
       margin-bottom: 50px;
-      font-weight:300;
     }
     h1{
       padding: 18px;
@@ -92,8 +110,8 @@ $layoutsidemargin: 50px;
     }
   }
   .layout {
-    margin-right:$layoutsidemargin;
-    margin-left: $verticalmenuwidth + $layoutsidemargin;
+    margin-right:$layoutsidemarginlarge;
+    margin-left: $verticalmenuwidth + $layoutsidemarginlarge;
     margin-top: 20px;
   }
   .widthcontainer{
@@ -117,34 +135,39 @@ $layoutsidemargin: 50px;
   }
 }
 
-@media screen and (min-width: 600px) and (max-height: 580px) {
+/*Large Widht Small Height*/
+@media screen and (min-width: $smallwidth) and (max-height: $smallheight) {
   .menu {
-    padding: 5px;
-    margin-right: 5px;
-    a{
-      font-size: 1.3em;
-      margin-bottom: 10px;
-    }
-    h1{
-      padding: 5px;
-      margin-top: 2px;
-    }
-    .menuentries{
-      max-height: 30vh;
-      p{
-        margin-top: -15px
-      }
-    }
+    height: auto;
+    width: 100vw;
+    text-align: center;
+    margin-top: 0;
+    padding-bottom: 20px;
+    position: relative;
   }
+  .socialnetworks{
+    position: relative;
+    /*max-width: 100px;*/
 
-    .socialnetworks{
-      /*max-height: 15vh;*/
-      max-width: $verticalmenuwidth - 100px;
-      span {
-        display: inline;
-      }
-    }
-    .optional {
-      display: none;
-    }
+  }
+  .layout {
+    margin-right:$layoutsidemarginsmall;
+    margin-left: $layoutsidemarginsmall;
+    margin-top: 10px;
+  }
+  h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-top: 15px;
+  }
+}
+
+
+/*X-Large screens*/
+@media screen and (min-width: $xlargewidth) and (min-height: $smallheight) {
+  .layout{
+    padding-right: 15vw;
+    padding-left: 15vw;
+  }
 }
