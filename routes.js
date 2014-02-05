@@ -2,9 +2,14 @@ Router.configure({
   layoutTemplate: 'layout',
   notFoundTemplate: 'notFound',
   // loadingTemplate: 'loading'
+  after: function () {
+        Session.set('hash', this.params.hash);
+        console.log(Session.get('hash'))
+    }
 });
 
 Router.map(function () {
+
 
   /**
    * The route's name is "home"
@@ -23,6 +28,28 @@ Router.map(function () {
 
   this.route('p2prm', {
     path: 'p2p-rm'
+  });
+
+  // MASTER THESIS
+
+  this.route('part1', {
+    path: 'paper-ethical-marketing/part-1'
+  });
+
+    this.route('part2', {
+    path: 'paper-ethical-marketing/part-2'
+  });
+
+    this.route('part3', {
+    path: 'paper-ethical-marketing/part-3'
+  });
+
+    this.route('bibliography', {
+    path: 'paper-ethical-marketing/bibliography'
+  });
+
+  this.route('lexic', {
+    path: 'paper-ethical-marketing/lexic'
   });
 
   this.route('paperethicalmarketing', {

@@ -1,9 +1,9 @@
 if (Meteor.isClient) {
 
-  Template.p2prm.events({
+  Template.layout.events({
     'click .deeplink' : function (event){
         event.preventDefault();
-        var id = $(event.target).attr('title')
+        var id = $(event.target).attr('href')
         $('body').scrollTo($(id), 500);
         }
   });
