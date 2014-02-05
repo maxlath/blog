@@ -7,7 +7,8 @@
       "iron-router": {},
       "analytics": {},
       "fonts-helveticas": {},
-      "jquery-scrollTo": {}
+      "jquery-scrollTo": {},
+      "font-awesome": {}
     },
     "packages": {
       "foundation": {
@@ -39,6 +40,11 @@
         "git": "https://github.com/nate-strauser/meteor-jquery.scrollTo.git",
         "tag": "v1.4.6",
         "commit": "ab6f05c43e2a54fc7711e5a2ff8daa45e5ff4322"
+      },
+      "font-awesome": {
+        "git": "https://github.com/nate-strauser/meteor-font-awesome.git",
+        "tag": "v4.0.3",
+        "commit": "61e9361384347547ae144f8228faa4deffda23db"
       }
     }
   }

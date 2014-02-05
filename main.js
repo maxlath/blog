@@ -1,22 +1,12 @@
 if (Meteor.isClient) {
-  // Template.hello.greeting = function () {
-  //   return "Welcome to maxlatheu.";
-  // };
 
-  Template.socialnetworks.events({
-    'hover div' : function () {
-      console.log("been hover here!");
-      $(this).find('a').fadeOut();
-    }
-  });
-
-$('.deeplink').click('a', function (event){
+  Template.p2prm.events({
+    'click .deeplink' : function (event){
         event.preventDefault();
-        var id = $(this).attr('title')
-        console.log(this)
-        console.log(id)
+        var id = $(event.target).attr('title')
         $('body').scrollTo($(id), 500);
-        });
+        }
+  });
 }
 
 if (Meteor.isServer) {

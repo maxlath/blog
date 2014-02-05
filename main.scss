@@ -39,9 +39,26 @@ h1{
     background-color: rgba(20,20,20,0.4);
 }
 
+h2, h3, h4, h5, h6{
+  font-family: 'Open Sans', sans-serif;
+  font-weight:300;
+  color: darken($menulinkcolor, 10%);
+}
+
 .date{
   color: $datecolor;
   text-align: center;
+}
+
+.article{
+  max-width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fa {
+  font-size: 64px;
 }
 
 

@@ -21,10 +21,21 @@ Router.map(function () {
   this.route('about', {
   });
 
-  this.route('p2p-rm', {
+  this.route('p2prm', {
+    path: 'p2p-rm'
   });
 
-  this.route('paper-ethical-marketing', {
+  this.route('paperethicalmarketing', {
+    path: 'paper-ethical-marketing'
+  });
+  
+
+  // OLD PERMALINKS
+  this.route('masterthesis', {
+    path: 'master-thesis',
+    action: function() {
+      this.redirect('/paper-ethical-marketing')
+    }
   });
 
   this.route('p2p-blog', {
