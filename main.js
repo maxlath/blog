@@ -10,6 +10,13 @@ if (Meteor.isClient) {
     }
   });
 
+$('.deeplink').click('a', function (event){
+        event.preventDefault();
+        var id = $(this).attr('title')
+        console.log(this)
+        console.log(id)
+        $('body').scrollTo($(id), 500);
+        });
 }
 
 if (Meteor.isServer) {
@@ -17,4 +24,3 @@ if (Meteor.isServer) {
     // code to run on server at startup
   });
 }
-
