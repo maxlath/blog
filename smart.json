@@ -4,6 +4,7 @@
     "scss": {},
     "iron-router": {},
     "analytics": {},
-    "fonts-helveticas": {}
+    "fonts-helveticas": {},
+    "jquery-scrollTo": {}
   }
 }

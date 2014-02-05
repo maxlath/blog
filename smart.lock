@@ -6,7 +6,8 @@
       "scss": {},
       "iron-router": {},
       "analytics": {},
-      "fonts-helveticas": {}
+      "fonts-helveticas": {},
+      "jquery-scrollTo": {}
     },
     "packages": {
       "foundation": {
@@ -33,6 +34,11 @@
         "git": "https://github.com/awatson1978/fonts-helveticas.git",
         "tag": "v0.2.0",
         "commit": "5bc7e8483e81d86363853e9aa15bae8987b8378a"
+      },
+      "jquery-scrollTo": {
+        "git": "https://github.com/nate-strauser/meteor-jquery.scrollTo.git",
+        "tag": "v1.4.6",
+        "commit": "ab6f05c43e2a54fc7711e5a2ff8daa45e5ff4322"
       }
     }
   }
