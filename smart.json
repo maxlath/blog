@@ -2,6 +2,8 @@
   "packages": {
     "foundation": {},
     "scss": {},
-    "iron-router": {}
+    "iron-router": {},
+    "analytics": {},
+    "fonts-helveticas": {}
   }
 }

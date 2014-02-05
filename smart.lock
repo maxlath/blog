@@ -4,7 +4,9 @@
     "basePackages": {
       "foundation": {},
       "scss": {},
-      "iron-router": {}
+      "iron-router": {},
+      "analytics": {},
+      "fonts-helveticas": {}
     },
     "packages": {
       "foundation": {
@@ -21,6 +23,16 @@
         "git": "https://github.com/EventedMind/iron-router.git",
         "tag": "v0.6.2",
         "commit": "ce56e58b45624dce992490f3a1c10f10d3948bae"
+      },
+      "analytics": {
+        "git": "https://github.com/Tarangp/Meteor-Analytics.git",
+        "tag": "v0.3.9",
+        "commit": "8efca2c6e006bc75f97ff4c3002a2f9ab1a6b91b"
+      },
+      "fonts-helveticas": {
+        "git": "https://github.com/awatson1978/fonts-helveticas.git",
+        "tag": "v0.2.0",
+        "commit": "5bc7e8483e81d86363853e9aa15bae8987b8378a"
       }
     }
   }

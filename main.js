@@ -10,6 +10,14 @@ if (Meteor.isClient) {
         console.log("You pressed the button");
     }
   });
+
+  Template.socialnetworks.events({
+    'hover div' : function () {
+      console.log("been hover here!");
+      $(this).find('a').fadeOut();
+    }
+  });
+
 }
 
 if (Meteor.isServer) {

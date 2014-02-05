@@ -25,11 +25,19 @@ Router.map(function () {
   this.route('paper-ethical-marketing', {
   });
 
+  this.route('p2p-blog', {
+    path: 'post/50921432199/what-is-p2p-resources-management',
+    action: function() {
+      this.redirect('/p2p-rm')
+    }
+  })
 
+  // this.route('tumblrposts', {
+  //   path: '/post/*',
+  // })
 
-
-  this.route('tumblrposts', {
-    path: '/post/*',
+  this.route('404', {
+    path: '/*',
   })
 
   console.log("Router started!!")
