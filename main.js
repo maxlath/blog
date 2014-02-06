@@ -12,10 +12,13 @@ if (Meteor.isClient) {
 
   Template.layout.rendered = function(){
         var hash =  Session.get('hash');
-        if (hash) {
+        if (hash && hash != undefined && hash != "undefined" && hash != "") {
           console.log("hash in layout rendered: " + hash)
+          hash = "#" + hash
           $('body').scrollTo($(hash), 500);
           Session.set('hash', '');
+          } else {
+            $('body').scrollTo('.layout')
           }
   }
 

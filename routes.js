@@ -6,7 +6,7 @@ Router.configure({
 
   // },
   after: function () {
-        Session.set('hash', "#" + this.params.hash);
+        Session.set('hash', this.params.hash);
         console.log("Session.get('hash'): " + Session.get('hash'))
   }
 });
