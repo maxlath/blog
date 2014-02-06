@@ -7,6 +7,18 @@ if (Meteor.isClient) {
         $('body').scrollTo($(id), 500);
         }
   });
+
+  Template.layout.rendered = function(){
+
+        var hash =  Session.get('hash');
+        if (hash) {
+          console.log("hash in layout rendered: " + hash)
+          $('body').scrollTo($(hash), 500);
+          Session.set('hash', '');
+          }
+  }
+
+
 }
 
 if (Meteor.isServer) {

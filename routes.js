@@ -2,10 +2,13 @@ Router.configure({
   layoutTemplate: 'layout',
   notFoundTemplate: 'notFound',
   // loadingTemplate: 'loading'
+  // before: function () {
+
+  // },
   after: function () {
-        Session.set('hash', this.params.hash);
-        console.log(Session.get('hash'))
-    }
+        Session.set('hash', "#" + this.params.hash);
+        console.log("Session.get('hash'): " + Session.get('hash'))
+  }
 });
 
 Router.map(function () {
