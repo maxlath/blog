@@ -71,7 +71,13 @@ Router.map(function () {
   this.route('p2p-blog', {
     path: 'post/50921432199/what-is-p2p-resources-management',
     action: function() {
-      this.redirect('/p2p-rm')
+    	var hash = Session.set('hash', this.params.hash);
+    	if (hash){
+    		var path = '/p2p-rm#' + hash
+    	} else {
+    		var path = '/p2p-rm'
+    	}
+      	this.redirect(path)
     }
   })
 
