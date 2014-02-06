@@ -31,18 +31,27 @@ body{
     }
 }
 
+ul
+{
+    list-style-type: none;
+}
+
 h1{
-    font-family: 'Open Sans', sans-serif;
-    font-weight:300;
     font-size:2.2em;
-    color: #fff;
-    background-color: rgba(20,20,20,0.4);
 }
 
 h2, h3, h4, h5, h6{
   font-family: 'Open Sans', sans-serif;
   font-weight:300;
   color: darken($menulinkcolor, 10%);
+}
+
+h1, .highlight{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+    color: #fff;
+    background-color: rgba(20,20,20,0.4);
+    padding: 3px;
 }
 
 .date{

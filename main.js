@@ -3,13 +3,14 @@ if (Meteor.isClient) {
   Template.layout.events({
     'click .deeplink' : function (event){
         event.preventDefault();
+        console.log("click " + event.target)
         var id = $(event.target).attr('href')
+        console.log("id: " + id)
         $('body').scrollTo($(id), 500);
         }
   });
 
   Template.layout.rendered = function(){
-
         var hash =  Session.get('hash');
         if (hash) {
           console.log("hash in layout rendered: " + hash)
@@ -17,7 +18,6 @@ if (Meteor.isClient) {
           Session.set('hash', '');
           }
   }
-
 
 }
 
