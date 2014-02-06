@@ -3,7 +3,7 @@
 }
 
 .quote {
-    font-family: 'Times New Roman';
+    font-family: "Times New Roman",Times,serif;
     font-weight:300;
     color: #171717;
     background-color: rgb(241,241,241);
@@ -14,4 +14,21 @@
     	color: #aaa;
     	margin: 10px;
     }
+}
+
+.header2{
+    margin-top: 10px;
+}
+
+.header3{
+    margin-top: 5px;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+a.active{
+    color: #999 !important;
 }

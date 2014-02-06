@@ -18,7 +18,7 @@ if (Meteor.isClient) {
           $('body').scrollTo($(hash), 500);
           Session.set('hash', '');
           } else {
-            $('body').scrollTo('.layout')
+            $('body').scrollTo('.topdiv')
           }
   }
 
