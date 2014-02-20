@@ -6,6 +6,7 @@
     "analytics": {},
     "fonts-helveticas": {},
     "jquery-scrollTo": {},
-    "font-awesome": {}
+    "font-awesome": {},
+    "phantomjs": {}
   }
 }

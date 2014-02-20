@@ -72,10 +72,25 @@ h1, .highlight{
   top: 0;
   background-color: $menubg;
   color: #fff;
-  a{
-    font-weight:300;
-    color: $menulinkcolor;
+  .menuentries {
+    a{
+      font-weight:300;
+      color: $menulinkcolor;
+      outline: none;
+      // text-decoration: none;
+    }
+    p{
+      padding: 5px;
+    }
   }
+}
+
+.menuentries .active{
+    a{
+      color: #555;
+    }
+    background-color: #eee;
+    box-shadow: 4px 4px 6px #aaa;
 }
 
 .layout {
@@ -125,13 +140,15 @@ h1, .highlight{
       margin-left: 40px;
       margin-right: 10px;
     }
-    a{
-      font-size: 1.3em;
-      margin-bottom: 50px;
-    }
     h1{
       padding: 18px;
       margin-top: 15px;
+    }
+  }
+  .menuentries{
+    a {
+      font-size: 1.3em;
+      margin-bottom: 50px;
     }
   }
   .layout {
@@ -144,21 +161,16 @@ h1, .highlight{
     margin-left: 5vw;
     margin-right: 5vw;
   }
-  .socialnetworks{
+  /*.socialnetworks{
     position: fixed;
     bottom: 5px;
     span {
       display: block;
       margin-bottom: 0.8em;
-    }
-  }
+    }*/
+  /*}*/
 }
 
-.socialnetworks{
-  a{
-    font-size: 1em;
-  }
-}
 
 /*Large Widht Small Height*/
 @media screen and (min-width: $smallwidth) and (max-height: $smallheight) {
@@ -171,7 +183,7 @@ h1, .highlight{
     position: relative;
   }
   .socialnetworks{
-    position: relative;
+    /*position: relative;*/
     /*max-width: 100px;*/
 
   }
@@ -194,5 +206,13 @@ h1, .highlight{
   .layout{
     padding-right: 15vw;
     padding-left: 15vw;
+  }
+}
+
+
+.socialnetworks{
+  a{
+    font-size: 1em;
+    margin-right: 35px;
   }
 }

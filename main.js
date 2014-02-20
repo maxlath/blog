@@ -1,5 +1,11 @@
 if (Meteor.isClient) {
 
+  // Template.menu.events({
+  //   'click .menuentries' : function (event){
+
+  //   }
+  // });
+
   Template.layout.events({
     'click .deeplink' : function (event){
         event.preventDefault();
