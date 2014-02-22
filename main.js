@@ -1,10 +1,11 @@
 if (Meteor.isClient) {
 
-  // Template.menu.events({
-  //   'click .menuentries' : function (event){
-
-  //   }
-  // });
+  Template.menu.events({
+    'click .menuentries' : function (event){
+      $('body').scrollTo('#topdiv')
+      console.log('menu click to topdiv')
+    }
+  });
 
   Template.layout.events({
     'click .deeplink' : function (event){
@@ -24,7 +25,7 @@ if (Meteor.isClient) {
           $('body').scrollTo($(hash), 500);
           Session.set('hash', '');
           } else {
-            $('body').scrollTo('.topdiv')
+            $('body').scrollTo('#topdiv')
           }
   }
 

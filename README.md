@@ -1,4 +1,4 @@
 blog
 ====
 
-my personal website in Meteor
+my personal website in [Meteor](http://meteor.com/)

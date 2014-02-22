@@ -9,7 +9,6 @@ foundation
 scss
 showdown
 iron-router
-analytics
 fonts-helveticas
 jquery-scrollTo
 font-awesome
