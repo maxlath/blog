@@ -11,10 +11,17 @@ if (Meteor.isClient) {
     'click .deeplink' : function (event){
         event.preventDefault();
         console.log("click " + event.target)
-        var id = $(event.target).attr('href')
+        var href = $(event.target).attr('href')
+        var id = "#" + href.split('#')[1]
         console.log("id: " + id)
+        window.location.hash = id
         $('body').scrollTo($(id), 500);
-        }
+        },
+    'click .fa-link' : function(event){
+        event.preventDefault();
+        var text = "http://maxlath.eu/p2p-rm#" + $(event.target).prev().find('a').attr('id')
+        window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
+    }
   });
 
   Template.layout.rendered = function(){
@@ -26,9 +33,8 @@ if (Meteor.isClient) {
           Session.set('hash', '');
           } else {
             $('body').scrollTo('#topdiv')
-          }
+          };
   }
-
 }
 
 if (Meteor.isServer) {

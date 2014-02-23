@@ -22,7 +22,7 @@ Router.map(function () {
   this.route('home', {
     path: '/',
     action: function() {
-      this.redirect('/p2p-rm')
+      this.redirect('/about')
     }
   });
 
@@ -58,7 +58,7 @@ Router.map(function () {
   this.route('paperethicalmarketing', {
     path: 'paper-ethical-marketing'
   });
-  
+
 
   // OLD PERMALINKS
   this.route('masterthesis', {

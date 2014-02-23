@@ -1,3 +1,24 @@
-.deeplinking {
-	line-height:200%
+$linkcolor: #ED6913;
+
+.article {
+    .deeplinking {
+        line-height:200%
+    }
+    .fa-link{
+        font-size: 1.6em;
+        margin-left: 5px;
+        color: rgba($linkcolor, 0.5);
+        &:hover{
+            color: rgba($linkcolor, 1);
+        }
+    }
+    h3{
+        display: inline;
+    }
+}
+
+
+.footer{
+    font-size: 0.8em;
+    text-align: center;
 }
