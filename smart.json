@@ -6,6 +6,7 @@
     "fonts-helveticas": {},
     "jquery-scrollTo": {},
     "font-awesome": {},
-    "phantomjs": {}
+    "phantomjs": {},
+    "server-eval": {}
   }
 }

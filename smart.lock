@@ -8,7 +8,8 @@
       "fonts-helveticas": {},
       "jquery-scrollTo": {},
       "font-awesome": {},
-      "phantomjs": {}
+      "phantomjs": {},
+      "server-eval": {}
     },
     "packages": {
       "foundation": {
@@ -23,8 +24,8 @@
       },
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
-        "tag": "v0.6.2",
-        "commit": "ce56e58b45624dce992490f3a1c10f10d3948bae"
+        "tag": "v0.6.4",
+        "commit": "927bbaed1b87894fb6fb70807f74ff3a5bd89f29"
       },
       "fonts-helveticas": {
         "git": "https://github.com/awatson1978/fonts-helveticas.git",
@@ -45,6 +46,11 @@
         "git": "https://github.com/gadicohen/meteor-phantomjs.git",
         "tag": "v0.0.2",
         "commit": "a72eb79af068dd5d5d617ac71a42bd74e0cb52a4"
+      },
+      "server-eval": {
+        "git": "https://github.com/gandev-de/meteor-server-eval.git",
+        "tag": "v0.4.1",
+        "commit": "4b9eb658ae02ad34fd4b525852bac9be90938744"
       }
     }
   }
