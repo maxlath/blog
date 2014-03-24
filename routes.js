@@ -59,6 +59,9 @@ Router.map(function () {
     path: 'paper-ethical-marketing'
   });
 
+  this.route('pgp', {
+  });
+
 
   // OLD PERMALINKS
   this.route('masterthesis', {

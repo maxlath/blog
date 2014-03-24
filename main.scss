@@ -164,6 +164,9 @@ h1, .highlight{
     margin-left: 5vw;
     margin-right: 5vw;
   }
+  .heightcontainer{
+    min-height: 85vh;
+  }
   /*.socialnetworks{
     position: fixed;
     bottom: 5px;
@@ -218,4 +221,12 @@ h1, .highlight{
     font-size: 1em;
     margin-right: 35px;
   }
+}
+
+
+.code{
+  font-family: "courier";
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
 }
