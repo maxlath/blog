@@ -9,49 +9,49 @@ Template.wikidataaptget.rendered = function(){
 // P2P
 Template.p2prm.rendered = function(){
 		$('.active').removeClass('active')
-        $("#p2prm").addClass('active')
+        $("#p2prm").find('p').addClass('active')
   }
 
 // PAPER
 
 Template.paperethicalmarketing.rendered = function(){
 		$('.active').removeClass('active')
-        $("#paperethicalmarketing").addClass('active')
+        $("#paperethicalmarketing").find('p').addClass('active')
   }
 Template.part1.rendered = function(){
 		$('.active').removeClass('active')
-        $("#I").addClass('active')
-        $("#paperethicalmarketing").addClass('active')
+        $("#I").find('p').addClass('active')
+        $("#paperethicalmarketing").find('p').addClass('active')
   }
 
 Template.part2.rendered = function(){
 		$('.active').removeClass('active')
-        $("#II").addClass('active')
-        $("#paperethicalmarketing").addClass('active')
+        $("#II").find('p').addClass('active')
+        $("#paperethicalmarketing").find('p').addClass('active')
   }
 
 Template.part3.rendered = function(){
 		$('.active').removeClass('active')
-        $("#III").addClass('active')
-        $("#paperethicalmarketing").addClass('active')
+        $("#III").find('p').addClass('active')
+        $("#paperethicalmarketing").find('p').addClass('active')
   }
 
 Template.bibliography.rendered = function(){
 		$('.active').removeClass('active')
-        $("#bibliography").addClass('active')
-        $("#paperethicalmarketing").addClass('active')
+        $("#bibliography").find('p').addClass('active')
+        $("#paperethicalmarketing").find('p').addClass('active')
   }
 
 Template.lexic.rendered = function(){
 		$('.active').removeClass('active')
-        $("#lexic").addClass('active')
-        $("#paperethicalmarketing").addClass('active')
+        $("#lexic").find('p').addClass('active')
+        $("#paperethicalmarketing").find('p').addClass('active')
   }
 
 
 // ABOUT
 Template.about.rendered = function(){
 		$('.active').removeClass('active')
-        $("#about").addClass('active')
+        $("#about").find('p').addClass('active')
   }
 
