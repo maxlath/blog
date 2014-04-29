@@ -3,7 +3,7 @@
 // WIKIDATA APT GET
 Template.wikidataaptget.rendered = function(){
     $('.active').removeClass('active')
-    $("#wikidata-and-the-apt-get-of-things").addClass('active')
+    $("#wikidata-and-the-apt-get-of-things").find('p').addClass('active')
   }
 
 // P2P

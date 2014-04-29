@@ -71,7 +71,6 @@ h1, .highlight{
   margin-bottom: 10px;
 }
 
-
 .menu{
   font-family: 'Open Sans', sans-serif;
   top: 0;
@@ -86,6 +85,13 @@ h1, .highlight{
     }
     p{
       padding: 5px;
+    }
+    #mod{
+      font-size: 1.2em;
+      color: #333;
+    }
+    .summary{
+      color: #333;
     }
   }
 }
@@ -145,18 +151,19 @@ h1, .highlight{
     padding: 20px;
     margin-right: 5px;
     div {
-      // margin-left: 40px;
       // margin-right: 10px;
     }
     h1{
       padding: 18px;
       margin-top: 15px;
     }
+    p{
+      // margin-left: 2em;
+    }
   }
   .menuentries{
     a {
       font-size: 1.3em;
-      margin-bottom: 50px;
     }
   }
   .layout {
