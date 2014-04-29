@@ -3,7 +3,7 @@
 $linkcolor: #ED6913;
 $menulinkcolor: #369100;
 $menubg: #D0D0D0;
-$datecolor: darken($linkcolor, 15%);
+$datecolor: #222;
 
 $smallwidth:  900px;
 $smallheight: 580px;
@@ -231,7 +231,43 @@ h1, .highlight{
 
 .code{
   font-family: "courier";
+
+}
+
+p.code{
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-left: 1.5em;
+}
+
+span.code{
+  color: #111;
+}
+
+
+.legend{
+  font-size: 0.8em;
+  margin-left: 3em;
+  background-position: #ccc;
+}
+
+.quote {
+    font-family: "Times New Roman",Times,serif;
+    font-weight:300;
+    color: #171717;
+    background-color: rgb(241,241,241);
+    padding: 1em;
+    margin-left: 1.5em;
+    .fa {
+      font-size: 1.8em;
+      color: #aaa;
+      margin: 0.2em 0.6em 2px 0.2em;
+    }
+}
+
+.lang{
+  font-family: "Times New Roman",Times,serif;
 }

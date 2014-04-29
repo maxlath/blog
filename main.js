@@ -19,7 +19,7 @@ if (Meteor.isClient) {
         },
     'click .fa-link' : function(event){
         event.preventDefault();
-        var text = "http://maxlath.eu/p2p-rm#" + $(event.target).prev().find('a').attr('id')
+        var text = "http://maxlath.eu" + window.location.pathname + "#" + $(event.target).prev().find('a').attr('id')
         window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
     }
   });

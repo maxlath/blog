@@ -62,6 +62,8 @@ Router.map(function () {
   this.route('pgp', {
   });
 
+  this.route('wikidata-and-the-apt-get-of-things',{});
+
 
   // OLD PERMALINKS
   this.route('masterthesis', {
