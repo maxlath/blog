@@ -1,3 +1,11 @@
+// That's a very *** ugly/not DRY hack
+
+// WIKIDATA APT GET
+Template.wikidataaptget.rendered = function(){
+    $('.active').removeClass('active')
+    $("#wikidata-and-the-apt-get-of-things").addClass('active')
+  }
+
 // P2P
 Template.p2prm.rendered = function(){
 		$('.active').removeClass('active')

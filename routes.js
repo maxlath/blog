@@ -62,7 +62,10 @@ Router.map(function () {
   this.route('pgp', {
   });
 
-  this.route('wikidata-and-the-apt-get-of-things',{});
+  this.route('wikidata-and-the-apt-get-of-things',{
+    path: 'wikidata-and-the-apt-get-of-things',
+    template: 'wikidataaptget'
+  });
 
 
   // OLD PERMALINKS
