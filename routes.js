@@ -7,7 +7,6 @@ Router.configure({
   // },
   after: function () {
         Session.set('hash', this.params.hash);
-        console.log("Session.get('hash'): " + Session.get('hash'))
   }
 });
 
@@ -96,8 +95,6 @@ Router.map(function () {
   this.route('404', {
     path: '/*',
   })
-
-  console.log("Router started!!")
 });
 
 

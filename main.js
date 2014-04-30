@@ -3,17 +3,14 @@ if (Meteor.isClient) {
   Template.menu.events({
     'click .menuentries' : function (event){
       $('body').scrollTo('#topdiv')
-      console.log('menu click to topdiv')
     }
   });
 
   Template.layout.events({
     'click .deeplink' : function (event){
         event.preventDefault();
-        console.log("click " + event.target)
         var href = $(event.target).attr('href')
         var id = "#" + href.split('#')[1]
-        console.log("id: " + id)
         window.location.hash = id
         $('body').scrollTo($(id), 500);
         },
@@ -25,17 +22,27 @@ if (Meteor.isClient) {
   });
 
   Template.layout.rendered = function(){
-        var hash =  Session.get('hash');
-        if (hash && hash != undefined && hash != "undefined" && hash != "") {
-          console.log("hash in layout rendered: " + hash)
-          hash = "#" + hash
-          $('body').scrollTo($(hash), 500);
-          Session.set('hash', '');
-          } else {
-            $('body').scrollTo('#topdiv')
-          };
+    defaultTitler()
+    var hash =  Session.get('hash');
+    if (hash && hash != undefined && hash != "undefined" && hash != "") {
+      hash = "#" + hash
+      $('body').scrollTo($(hash), 500);
+      Session.set('hash', '');
+      } else {
+        $('body').scrollTo('#topdiv')
+      };
+  }
+
+  var defaultTitler = function(){
+    var title = $('h2').text().trim()
+    if (window.location.pathname == "/about"){
+      document.title = "Maxime Lathuilière"
+    } else {
+      document.title = title
+    }
   }
 }
+
 
 if (Meteor.isServer) {
   Meteor.startup(function () {
