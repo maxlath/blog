@@ -4,9 +4,7 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-preserve-inputs
 foundation
-scss
 showdown
 iron-router
 fonts-helveticas
@@ -14,5 +12,4 @@ jquery-scrollTo
 font-awesome
 phantomjs
 spiderable
-server-eval
-analyticsjs
+scss

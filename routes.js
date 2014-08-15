@@ -68,6 +68,13 @@ Router.map(function () {
 
 
   // OLD PERMALINKS
+  this.route('masterthesis-post', {
+    path: '#16523478807',
+    action: function() {
+      this.redirect('/paper-ethical-marketing')
+    }
+  });
+
   this.route('masterthesis', {
     path: 'master-thesis',
     action: function() {

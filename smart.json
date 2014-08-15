@@ -1,13 +1,11 @@
 {
   "packages": {
     "foundation": {},
-    "scss": {},
     "iron-router": {},
     "fonts-helveticas": {},
     "jquery-scrollTo": {},
     "font-awesome": {},
     "phantomjs": {},
-    "server-eval": {},
-    "analyticsjs": {}
+    "scss": {}
   }
 }
