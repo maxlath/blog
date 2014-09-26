@@ -10,6 +10,11 @@ Router.configure({
   }
 });
 
+Router.onRun(function(){
+    if(Session.equals('AnalyticsJS_loaded', true))
+        analytics.page(this.path);
+});
+
 Router.map(function () {
 
 

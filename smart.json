@@ -6,6 +6,7 @@
     "jquery-scrollTo": {},
     "font-awesome": {},
     "phantomjs": {},
-    "scss": {}
+    "scss": {},
+    "analyticsjs": {}
   }
 }

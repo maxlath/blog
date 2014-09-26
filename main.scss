@@ -108,6 +108,11 @@ h1, .highlight{
   position: relative;
 }
 
+.socialnetworks{
+  display: flex;
+  flex-wrap:wrap;
+}
+
 /*Small Widht*/
 @media screen and (max-width: $smallwidth) {
   .menu {
@@ -129,9 +134,6 @@ h1, .highlight{
     margin-top: 0;
     margin-bottom: 30px;
     padding-top: 15px;
-  }
-  .socialnetworks a{
-    display: block;
   }
 }
 
@@ -179,14 +181,6 @@ h1, .highlight{
   .heightcontainer{
     min-height: 85vh;
   }
-  /*.socialnetworks{
-    position: fixed;
-    bottom: 5px;
-    span {
-      display: block;
-      margin-bottom: 0.8em;
-    }*/
-  /*}*/
 }
 
 
@@ -199,11 +193,6 @@ h1, .highlight{
     margin-top: 0;
     padding-bottom: 20px;
     position: relative;
-  }
-  .socialnetworks{
-    /*position: relative;*/
-    /*max-width: 100px;*/
-
   }
   .layout {
     margin-right:$layoutsidemarginsmall;
