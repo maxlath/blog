@@ -1,5 +1,6 @@
 {
   "public": {
-    "analytics_api_key": "nilx8coc37"
+    "analytics_api_key": "nilx8coc37",
+    "analytics_localhost_active":true
   }
 }
