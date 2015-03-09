@@ -37,7 +37,7 @@ body{
 }
 
 h1{
-    font-size:2.2em;
+    font-size: 2em;
 }
 
 h2, h3, h4, h5, h6{
@@ -76,6 +76,7 @@ h1, .highlight{
   top: 0;
   background-color: $menubg;
   color: #fff;
+  overflow: auto;
   .menuentries {
     a{
       font-weight:300;
@@ -266,4 +267,8 @@ span.code{
 
 .lang{
   font-family: "Times New Roman",Times,serif;
+}
+
+#about{
+  padding-bottom: 2em;
 }
